@@ -1,0 +1,7663 @@
+{
+ "task_id": "task_8tsVQ5tpc7AykJ4Hrbj7l",
+ "as_of": "2026-11-16",
+ "sources": [
+  {
+   "registry": "BasedAgents",
+   "scope": "Full census: all 1,222 agent profiles via /v1/agents/search pagination (capabilities, skills, tags) + required_capabilities of open and settled tasks via /v1/tasks",
+   "url": "https://api.basedagents.ai/v1"
+  },
+  {
+   "registry": "A2A samples (a2aproject/a2a-samples)",
+   "scope": "All agent-card JSON files: skills[].id and skills[].tags",
+   "url": "https://github.com/a2aproject/a2a-samples"
+  },
+  {
+   "registry": "Coinbase AgentKit (coinbase/agentkit)",
+   "scope": "All action_providers directory names (TypeScript + Python trees)",
+   "url": "https://github.com/coinbase/agentkit"
+  },
+  {
+   "registry": "crewAI-tools (crewAIInc/crewAI-tools)",
+   "scope": "All tool directory names under crewai_tools/tools/",
+   "url": "https://github.com/crewAIInc/crewAI-tools"
+  }
+ ],
+ "observed": [
+  {
+   "capability_string": "research",
+   "count": 1023,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "code",
+   "count": 467,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "data",
+   "count": 413,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-analysis",
+   "count": 350,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-integration",
+   "count": 279,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "content",
+   "count": 263,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "automation",
+   "count": 261,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "task.required_capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-quality",
+   "count": 252,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-audit",
+   "count": 251,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "json-validation",
+   "count": 251,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "writing",
+   "count": 214,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-research",
+   "count": 119,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "vendor-risk",
+   "count": 107,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "document-analysis",
+   "count": 107,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "procurement",
+   "count": 107,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "analysis",
+   "count": 97,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "fact-checking",
+   "count": 95,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "documentation",
+   "count": 79,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "summarization",
+   "count": 58,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "reasoning",
+   "count": 53,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "code-review",
+   "count": 53,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "x402",
+   "count": 51,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "task.required_capabilities"
+    },
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "testing",
+   "count": 50,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "tool-use",
+   "count": 47,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "python",
+   "count": 47,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "verification",
+   "count": 42,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-search",
+   "count": 42,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "code-generation",
+   "count": 39,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "search",
+   "count": 35,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "planning",
+   "count": 35,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "docker",
+   "count": 30,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "task.required_capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "security-review",
+   "count": 30,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-processing",
+   "count": 28,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "security",
+   "count": 26,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "translation",
+   "count": 23,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "mcp",
+   "count": 21,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-testing",
+   "count": 20,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "coding",
+   "count": 18,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "json",
+   "count": 17,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "technical-writing",
+   "count": 16,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "qa",
+   "count": 16,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "web_search",
+   "count": 15,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-extraction",
+   "count": 13,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "csv",
+   "count": 10,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "api",
+   "count": 9,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-scraping",
+   "count": 9,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "base",
+   "count": 8,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "security-audit",
+   "count": 8,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web",
+   "count": 8,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "usdc",
+   "count": 7,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "docs",
+   "count": 7,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "debugging",
+   "count": 7,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "javascript",
+   "count": 7,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "data_analysis",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "content-creation",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "openapi",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-cleaning",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "typescript",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "agent-compatibility-testing",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web3",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "scripting",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "sentinel",
+   "count": 6,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "audit",
+   "count": 5,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "software-development",
+   "count": 5,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "a2a",
+   "count": 5,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "review",
+   "count": 5,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "treasury",
+   "count": 5,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "http-qa",
+   "count": 5,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "probes",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "crypto-mission",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "crypto",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "software-engineering",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "github",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "content_creation",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "payment-verification",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-posting",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "solidity",
+   "count": 4,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "http",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "base-usdc",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "Data Analysis",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "video",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "test",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "prompt-engineering",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "design",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "bounties",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-collection",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "software-testing",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-conversion",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "devops",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "localization",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "agent-acquisition",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "backend",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-development",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "conversion",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "a2a-samples",
+     "field": "skill.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "market-research",
+   "count": 3,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "identity",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "hypothesis_generation",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "frontend",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "architecture",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "apis",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "art",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "test-generation",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-transformation",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "csv-processing",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "voiceover",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "linux-admin",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "network-diagnostic",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "research-technical",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "markdown",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "deep-research",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "agent-orchestration",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "trading-data",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-security",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "agents",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "landing-page",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "tasks",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "seo",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "aeo",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "source-verification",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "outreach",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "monitoring",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "code_review",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "bot",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "parsing",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-transform",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "routing",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    },
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "code-fix",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-verification",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "interop",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "citations",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "ci",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web research",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-routing",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "deployment",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "smart-contract-audit",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "general",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "evm",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "report-writing",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "solana",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "onchain-audit",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "ai-automation",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "onchain-data",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "evaluation",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "summary",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "copywriting",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "editing",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "shopify",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "stripe-payments",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "automations",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "scraping",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-documentation",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "business-intelligence",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "quality-assurance",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "browser",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "planner",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.id"
+    },
+    {
+     "registry": "a2a-samples",
+     "field": "skill.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "currency_conversion",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.id"
+    }
+   ]
+  },
+  {
+   "capability_string": "currency",
+   "count": 2,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "registry",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "memory",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "openclaw",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "assistant",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "founder",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "builder",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "literature_review",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "experimental_design",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "scientific_synthesis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "cross_domain_reasoning",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-utilities",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "link-check",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "readme",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "proofreading",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "faq",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "permanent-memory",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "technical-verification",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "sdk-testing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-performance",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "root-cause-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "session-continuity",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "patch",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "patches",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "evidence",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "base-chain",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "all",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "product-testing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "refactoring",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "structured-research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "workflow-verification",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "voice",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "code-execution",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "citation-finding",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-decomposition",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "shell-scripting",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "http-testing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "quantum_simulation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "atomic_physics",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "condensed_matter",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "iterative_research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "eigenvalue_computation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "wavefunction_analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "autoresearch",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-automation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "talent-search",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "engineer-matching",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "multi-platform-messaging",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "x-engagement",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "github-automation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "strategic-scouting",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "cron-automation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "systems-architecture",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "knowledge-management",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "multi-ai-orchestration",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "strategic-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "video-creation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "infrastructure-management",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "openclaw-administration",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "second-brain",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-data",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "news-search",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "scholarly-search",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "metasearch",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "bounty-solvency",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "payout-risk",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "x402-payments",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "solvency",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-services",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "base-data",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "landing-page-audit",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "conversion-audit",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "accessibility-audit",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "evidence-report",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-authoring",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "examples",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "official",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "payments",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "example",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "demo",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "marketplace",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "hermes",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "indie-mind",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "credito.cr",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "costa-rica",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "text-generation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "inference",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "training",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "network-coordination",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "distributed-ai",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "self-evolving",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "EVO-token",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-launch-preflight",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "multilingual-writing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "launch",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "multilingual",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "x402-api",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "strategic-reads",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "assessment",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "ilands",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "strategy",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "reads",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "link-building",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "ai-video",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "image-workflows",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "counterargument",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "steelman",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "critique",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "earn-only",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "zero-upfront-cost",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "autonomous-worker",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-api",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "json-transform",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "html-css-js",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "network-diagnostics",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "browser-qa",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "content-editing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "log-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "python_automation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web_scraping",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "telegram_bots",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api_integration",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "technical_research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "bug_investigation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "housekeeping",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "public-data research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "source verification",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "JavaScript tooling",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "technical documentation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "generation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "code research automation api-integration",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "governance",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "bug-hunter",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "image-generation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-health",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "dns-tls",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-tooling",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "coordination",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "ai-operated",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "commerce",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "mcp-interop",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "onchain-verification",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "all thr above",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "defi-metrics",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "browser-automation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "code-reviw",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "lead-generation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "node-js",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "roblox-luau",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "evm-base",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "opportunity-scouting",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "market-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "design-systems",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "spreadsheets",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "x402-distribution",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "registry-submission",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "machine-discoverability",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "payment-path-audit",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "machine-acquisition",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "channel-discovery",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "settlement-attribution",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "buyer-measurement",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "machine-marketplace",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "provider-discovery",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "provider-ranking",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "machine-demand-research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "protocol-monitoring",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "registry-opportunity-research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "product-opportunity-discovery",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "software development",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "agent-outreach",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-followup",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-support",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-diagnostics",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "openapi-response-checks",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "json-quality",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "geojson-quality",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "diff-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "document-qa",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "os-windows",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "windows",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "zero-spend",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "dns",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "structured-extraction",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web_research. content_writting",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "product-information",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "open-source",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "workspace",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "agent-tools",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-discovery",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "escrow-verification",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "artifact-validation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "submission-packets",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "source-tracing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "verifiable-records",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "http-402",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "telago",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "crypto-price",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-extract",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "gas-price",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "token-info",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-query",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "agent-task",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "node",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "cryptography",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "benchmarking",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "security-research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "fullstack-dev",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "rapid-prototyping",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-visualization",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "onboarding",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "content-writing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task-execution",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "sql",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "etl",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "technical-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "legacy-code-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "on-chain-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "due-diligence",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "ai-agents",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "reporting",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web_audit",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "accessibility",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "html",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-documentation-audit",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "json-data-validation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "technical-documentation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "public-api-testing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-development",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "fiction",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "bug-fixing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "product-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "spanish-copywriting",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "defi",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "document_creation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "programming",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "openapi-audit",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "onchain-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-security-review",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "smart-contract-review",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "write",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "summarize",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "document",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "translate",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "report",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "trading-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "autonomous",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "bounded",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "paid-work",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "software",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "letters",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "feedback",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "difficult-conversations",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "browser-tasks",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "on-chain",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-validation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "ops-automation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "onchain",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "registries",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "document-processing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-entry",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "spreadsheet",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "blockchain",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "technical writing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "agent automation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "code review",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "latent space sampling",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "hyperstition generation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "memetic content creation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "scripture writing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "autonomous daemon logging",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "information extraction",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "agent-to-agent task execution",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "cli-tools",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "pytest",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-docs",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "bugfix",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web scraping",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web_research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data_collection",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "content_evaluation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "cad",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "image-gen",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-labeling",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "competitor-analysis",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "b2b-research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "lead-research",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-pipelines",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "wallet-monitoring",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-cleanup",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "smart-contracts",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api_testing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data_processing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "rust",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "base-usdc-x402",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "security-auditing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data-engineering",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "mcp-servers",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "ht ?",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-automation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "SOVEREIGN BOUNTY MINER is an autonomous AI-powered digital work agent specializing in software engineering",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "task execution",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "and verified bounty completion.",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "analytics",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web development",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "api-audit",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "web-extraction",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "osint",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "smart-contract-security",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "translation DE-EN",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "extraction",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "browsing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "interoperability",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "nano",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "PHP",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "Laravel",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "MySQL",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "REST API",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "data extraction",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "invoice parsing",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "live-data",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "device-recall-clearance-match",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "legal-entity-reconciliation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "macro-data-reconciliation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "basedagents",
+     "field": "agent.capabilities"
+    }
+   ]
+  },
+  {
+   "capability_string": "book_air_tickets",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.id"
+    }
+   ]
+  },
+  {
+   "capability_string": "Book air tickets",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "book_cars",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.id"
+    }
+   ]
+  },
+  {
+   "capability_string": "Book cars",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "book_accommodation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.id"
+    }
+   ]
+  },
+  {
+   "capability_string": "Book accommodation",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "executor",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.id"
+    }
+   ]
+  },
+  {
+   "capability_string": "execute plan",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "a2a-samples",
+     "field": "skill.tags"
+    }
+   ]
+  },
+  {
+   "capability_string": "aave",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "basename",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "cdp",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "compound",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "erc20",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "erc721",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "hyperboliclabs",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "morpho",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "nillion",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "onramp",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "pyth",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "ssh",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "superfluid",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "twitter",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "wallet",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "weth",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "wow",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "agentkit",
+     "field": "action_provider"
+    }
+   ]
+  },
+  {
+   "capability_string": "ai_mind_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "apify_actors_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "arxiv_paper_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "brave_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "brightdata_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "browserbase_load_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "code_docs_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "code_interpreter_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "composio_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "contextualai_create_agent_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "contextualai_parse_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "contextualai_query_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "contextualai_rerank_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "couchbase_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "crewai_enterprise_tools",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "crewai_platform_tools",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "csv_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "dalle_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "databricks_query_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "directory_read_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "directory_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "docx_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "exa_tools",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "file_read_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "file_writer_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "files_compressor_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "firecrawl_crawl_website_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "firecrawl_scrape_website_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "firecrawl_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "generate_crewai_automation_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "github_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "hyperbrowser_load_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "invoke_crewai_automation_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "jina_scrape_website_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "json_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "linkup",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "llamaindex_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "mdx_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "mongodb_vector_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "multion_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "mysql_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "nl2sql",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "ocr_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "oxylabs_amazon_product_scraper_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "oxylabs_amazon_search_scraper_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "oxylabs_google_search_scraper_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "oxylabs_universal_scraper_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "parallel_tools",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "patronus_eval_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "pdf_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "pdf_text_writing_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "pg_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "qdrant_vector_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "rag",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "scrape_element_from_website",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "scrape_website_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "scrapegraph_scrape_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "scrapfly_scrape_website_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "selenium_scraping_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "serpapi_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "serper_dev_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "serper_scrape_website_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "serply_api_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "singlestore_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "snowflake_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "spider_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "stagehand_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "tavily_extractor_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "tavily_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "txt_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "vision_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "weaviate_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "website_search",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "xml_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "youtube_channel_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "youtube_video_search_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  },
+  {
+   "capability_string": "zapier_action_tool",
+   "count": 1,
+   "sources": [
+    {
+     "registry": "crewai-tools",
+     "field": "tool_dir"
+    }
+   ]
+  }
+ ],
+ "taxonomy": {
+  "tiers": [
+   {
+    "id": "research",
+    "definition": "Acquiring new information from external sources."
+   },
+   {
+    "id": "analysis",
+    "definition": "Deriving judgements from material in hand."
+   },
+   {
+    "id": "engineering",
+    "definition": "Building or changing software and systems."
+   },
+   {
+    "id": "data",
+    "definition": "Work whose primary artefact is a dataset."
+   },
+   {
+    "id": "content",
+    "definition": "Producing human-facing artefacts."
+   },
+   {
+    "id": "automation",
+    "definition": "Delegated execution of workflows and tasks."
+   },
+   {
+    "id": "commerce",
+    "definition": "Moving, measuring or managing money and market value."
+   },
+   {
+    "id": "communication",
+    "definition": "Interacting with people or audiences."
+   },
+   {
+    "id": "security",
+    "definition": "Protective and adversarial checking."
+   },
+   {
+    "id": "trust",
+    "definition": "Establishing that claims, identities and payments are genuine."
+   },
+   {
+    "id": "platform",
+    "definition": "The agent economy's own infrastructure."
+   }
+  ],
+  "terms": [
+   {
+    "id": "research",
+    "tier": "research",
+    "label": "Research (general)",
+    "definition": "Acquiring new information from external sources; the deliverable is findings, not a judgement on supplied material.",
+    "maps_from": [
+     "research"
+    ],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "research.web-research",
+    "tier": "research",
+    "label": "Web research & search",
+    "definition": "Finding and gathering information from the public web: search, metasearch, news and site search, deep/iterative research runs.",
+    "maps_from": [
+     "autoresearch",
+     "brave_search_tool",
+     "code_docs_search_tool",
+     "deep-research",
+     "exa_tools",
+     "firecrawl_search_tool",
+     "github_search_tool",
+     "iterative_research",
+     "linkup",
+     "metasearch",
+     "news-search",
+     "osint",
+     "public-data research",
+     "research-technical",
+     "search",
+     "serpapi_tool",
+     "serper_dev_tool",
+     "serply_api_tool",
+     "structured-research",
+     "tavily_search_tool",
+     "technical_research",
+     "web research",
+     "web-extraction",
+     "web-research",
+     "web-search",
+     "web_research",
+     "web_search",
+     "website_search",
+     "youtube_channel_search_tool",
+     "youtube_video_search_tool"
+    ],
+    "relations": {
+     "broader": "research"
+    }
+   },
+   {
+    "id": "research.source-verification",
+    "tier": "research",
+    "label": "Source verification & fact-checking",
+    "definition": "Checking claims against sources: fact-checking, citation finding, source tracing, assembling evidence.",
+    "maps_from": [
+     "citation-finding",
+     "citations",
+     "evidence",
+     "fact-checking",
+     "source verification",
+     "source-tracing",
+     "source-verification"
+    ],
+    "relations": {
+     "broader": "research"
+    }
+   },
+   {
+    "id": "research.market-research",
+    "tier": "research",
+    "label": "Market & opportunity research",
+    "definition": "Researching markets, competitors, vendors, procurement options, leads and opportunities; the deliverable is a researched shortlist or landscape.",
+    "maps_from": [
+     "b2b-research",
+     "competitor-analysis",
+     "lead-research",
+     "machine-demand-research",
+     "market-analysis",
+     "market-research",
+     "opportunity-scouting",
+     "procurement",
+     "product-opportunity-discovery",
+     "registry-opportunity-research",
+     "strategic-scouting"
+    ],
+    "relations": {
+     "broader": "research"
+    }
+   },
+   {
+    "id": "research.scholarly",
+    "tier": "research",
+    "label": "Scholarly & scientific research",
+    "definition": "Literature review, scholarly search, scientific synthesis and experimental design over papers and academic sources.",
+    "maps_from": [
+     "arxiv_paper_tool",
+     "experimental_design",
+     "literature_review",
+     "scholarly-search",
+     "scientific_synthesis"
+    ],
+    "relations": {
+     "broader": "research"
+    }
+   },
+   {
+    "id": "research.scientific-computing",
+    "tier": "research",
+    "label": "Scientific computing",
+    "definition": "Numerical/simulation computation for science: quantum simulation, eigenvalue computation, wavefunction and atomic/condensed-matter analysis.",
+    "maps_from": [
+     "atomic_physics",
+     "condensed_matter",
+     "eigenvalue_computation",
+     "quantum_simulation",
+     "wavefunction_analysis"
+    ],
+    "relations": {
+     "broader": "research"
+    }
+   },
+   {
+    "id": "analysis",
+    "tier": "analysis",
+    "label": "Analysis (general)",
+    "definition": "Deriving judgements, summaries or structure from material already in hand; no new external information is acquired.",
+    "maps_from": [
+     "analysis"
+    ],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "analysis.data-analysis",
+    "tier": "analysis",
+    "label": "Data analysis",
+    "definition": "Quantitative analysis of datasets: statistics, business intelligence, pattern finding over data in hand.",
+    "maps_from": [
+     "Data Analysis",
+     "analytics",
+     "business-intelligence",
+     "data-analysis",
+     "data_analysis",
+     "device-recall-clearance-match",
+     "legal-entity-reconciliation",
+     "macro-data-reconciliation"
+    ],
+    "relations": {
+     "broader": "analysis"
+    }
+   },
+   {
+    "id": "analysis.document-analysis",
+    "tier": "analysis",
+    "label": "Document & content analysis",
+    "definition": "Reading and analysing documents, logs and media in hand: document QA, log analysis, image understanding.",
+    "maps_from": [
+     "document-analysis",
+     "document-processing",
+     "document-qa",
+     "invoice parsing",
+     "log-analysis",
+     "vision_tool"
+    ],
+    "relations": {
+     "broader": "analysis"
+    }
+   },
+   {
+    "id": "analysis.code-analysis",
+    "tier": "analysis",
+    "label": "Codebase analysis",
+    "definition": "Understanding existing code without changing it: legacy-code analysis and comprehension reports.",
+    "maps_from": [
+     "legacy-code-analysis"
+    ],
+    "relations": {
+     "broader": "analysis"
+    }
+   },
+   {
+    "id": "analysis.summarization",
+    "tier": "analysis",
+    "label": "Summarisation",
+    "definition": "Compressing material into faithful shorter form: summaries of text, documents or data.",
+    "maps_from": [
+     "summarization",
+     "summarize",
+     "summary"
+    ],
+    "relations": {
+     "broader": "analysis"
+    }
+   },
+   {
+    "id": "analysis.risk-assessment",
+    "tier": "analysis",
+    "label": "Risk & diligence assessment",
+    "definition": "Assessing risk of counterparties, payouts, solvency and vendors; due-diligence reports.",
+    "maps_from": [
+     "bounty-solvency",
+     "due-diligence",
+     "payout-risk",
+     "solvency",
+     "vendor-risk"
+    ],
+    "relations": {
+     "broader": "analysis"
+    }
+   },
+   {
+    "id": "analysis.reasoning",
+    "tier": "analysis",
+    "label": "Reasoning, evaluation & strategy",
+    "definition": "Structured thinking as the deliverable: reasoning, hypothesis generation, critique, steelmanning, counterarguments, evaluation, assessment, strategy and feedback.",
+    "maps_from": [
+     "assessment",
+     "content_evaluation",
+     "counterargument",
+     "critique",
+     "cross_domain_reasoning",
+     "evaluation",
+     "feedback",
+     "hypothesis_generation",
+     "patronus_eval_tool",
+     "product-analysis",
+     "reasoning",
+     "steelman",
+     "strategic-analysis",
+     "strategic-reads",
+     "strategy"
+    ],
+    "relations": {
+     "broader": "analysis"
+    }
+   },
+   {
+    "id": "engineering",
+    "tier": "engineering",
+    "label": "Engineering (general)",
+    "definition": "Building or changing software and technical systems.",
+    "maps_from": [],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "engineering.software-development",
+    "tier": "engineering",
+    "label": "Software development",
+    "definition": "Writing and changing code: development, generation, fixes expressed as patches, refactoring, scripting, code execution and prototyping.",
+    "maps_from": [
+     "JavaScript tooling",
+     "Laravel",
+     "MySQL",
+     "code",
+     "code-execution",
+     "code-fix",
+     "code-generation",
+     "code_interpreter_tool",
+     "coding",
+     "github",
+     "patch",
+     "patches",
+     "programming",
+     "refactoring",
+     "scripting",
+     "shell-scripting",
+     "software development",
+     "software-development",
+     "software-engineering"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.programming-languages",
+    "tier": "engineering",
+    "label": "Programming languages",
+    "definition": "Declared ability to work in a named language; a language names the medium of a software-development deliverable, unlike a chain/venue name which names where value sits.",
+    "maps_from": [
+     "PHP",
+     "javascript",
+     "node",
+     "node-js",
+     "python",
+     "roblox-luau",
+     "rust",
+     "typescript"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.code-review",
+    "tier": "engineering",
+    "label": "Code review",
+    "definition": "Reviewing code and diffs for correctness, quality and risk; the deliverable is findings, not changes.",
+    "maps_from": [
+     "code review",
+     "code-review",
+     "code_review",
+     "diff-analysis",
+     "review"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.debugging",
+    "tier": "engineering",
+    "label": "Debugging & root-cause analysis",
+    "definition": "Finding and fixing faults: bug investigation, bug fixing, root-cause analysis.",
+    "maps_from": [
+     "bug-fixing",
+     "bug-hunter",
+     "bug_investigation",
+     "bugfix",
+     "debugging",
+     "root-cause-analysis"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.testing",
+    "tier": "engineering",
+    "label": "Testing, QA & audits of built artefacts",
+    "definition": "Checking built artefacts against criteria: software/API/browser testing, test generation, benchmarking, accessibility and site/API/documentation audits, link checks, launch preflight.",
+    "maps_from": [
+     "accessibility",
+     "accessibility-audit",
+     "agent-compatibility-testing",
+     "api-audit",
+     "api-documentation-audit",
+     "api-performance",
+     "api-testing",
+     "api_testing",
+     "benchmarking",
+     "browser-qa",
+     "conversion-audit",
+     "http-qa",
+     "http-testing",
+     "landing-page-audit",
+     "link-check",
+     "openapi-audit",
+     "openapi-response-checks",
+     "probes",
+     "product-testing",
+     "public-api-testing",
+     "pytest",
+     "qa",
+     "quality-assurance",
+     "sdk-testing",
+     "smart-contract-security",
+     "software-testing",
+     "test",
+     "test-generation",
+     "testing",
+     "web-launch-preflight"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.api-engineering",
+    "tier": "engineering",
+    "label": "API engineering & integration",
+    "definition": "Building or integrating APIs and HTTP services: API development, integration, OpenAPI work, HTTP plumbing.",
+    "maps_from": [
+     "REST API",
+     "api",
+     "api-development",
+     "api-integration",
+     "api-services",
+     "api_integration",
+     "apis",
+     "http",
+     "openapi",
+     "web-api"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.web-development",
+    "tier": "engineering",
+    "label": "Web development",
+    "definition": "Building web front-ends and full-stack sites: frontend, backend, landing pages, HTML/CSS/JS.",
+    "maps_from": [
+     "backend",
+     "frontend",
+     "fullstack-dev",
+     "html",
+     "html-css-js",
+     "landing-page",
+     "web development",
+     "web-development"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.smart-contracts",
+    "tier": "engineering",
+    "label": "Smart-contract development",
+    "definition": "Writing smart contracts (e.g. Solidity) and contract systems.",
+    "maps_from": [
+     "smart-contracts",
+     "solidity"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.cryptography",
+    "tier": "engineering",
+    "label": "Cryptography",
+    "definition": "Applied cryptography: signatures, encryption, key handling as an engineering deliverable.",
+    "maps_from": [
+     "cryptography"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.devops",
+    "tier": "engineering",
+    "label": "DevOps, systems & monitoring",
+    "definition": "Operating systems and delivery pipelines: Docker, CI, deployment, Linux/Windows admin, infrastructure, monitoring, network/DNS/SSH diagnostics.",
+    "maps_from": [
+     "api-diagnostics",
+     "api-health",
+     "autonomous daemon logging",
+     "ci",
+     "deployment",
+     "devops",
+     "dns",
+     "dns-tls",
+     "docker",
+     "infrastructure-management",
+     "linux-admin",
+     "monitoring",
+     "network-diagnostic",
+     "network-diagnostics",
+     "os-windows",
+     "protocol-monitoring",
+     "ssh",
+     "wallet-monitoring",
+     "windows"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.architecture",
+    "tier": "engineering",
+    "label": "Systems architecture",
+    "definition": "Designing system structure: architecture and systems-architecture deliverables.",
+    "maps_from": [
+     "architecture",
+     "systems-architecture"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.prototyping",
+    "tier": "engineering",
+    "label": "Rapid prototyping",
+    "definition": "Building throwaway or first-cut implementations to test an idea quickly.",
+    "maps_from": [
+     "rapid-prototyping"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "engineering.ml",
+    "tier": "engineering",
+    "label": "ML model operations",
+    "definition": "Running or training machine-learning models: inference and training as a service.",
+    "maps_from": [
+     "inference",
+     "prompt-engineering",
+     "training"
+    ],
+    "relations": {
+     "broader": "engineering"
+    }
+   },
+   {
+    "id": "data",
+    "tier": "data",
+    "label": "Data (general)",
+    "definition": "Work whose primary artefact is a dataset: collecting, processing, validating, querying or presenting data.",
+    "maps_from": [
+     "data"
+    ],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "data.collection",
+    "tier": "data",
+    "label": "Data collection & extraction",
+    "definition": "Acquiring datasets from sources: scraping, crawling, extraction (incl. OCR and structured extraction), page loading for capture.",
+    "maps_from": [
+     "apify_actors_tool",
+     "brightdata_tool",
+     "browserbase_load_tool",
+     "data extraction",
+     "data-collection",
+     "data-extraction",
+     "data_collection",
+     "firecrawl_crawl_website_tool",
+     "firecrawl_scrape_website_tool",
+     "hyperbrowser_load_tool",
+     "information extraction",
+     "jina_scrape_website_tool",
+     "ocr_tool",
+     "oxylabs_amazon_product_scraper_tool",
+     "oxylabs_amazon_search_scraper_tool",
+     "oxylabs_google_search_scraper_tool",
+     "oxylabs_universal_scraper_tool",
+     "scrape_element_from_website",
+     "scrape_website_tool",
+     "scrapegraph_scrape_tool",
+     "scrapfly_scrape_website_tool",
+     "scraping",
+     "selenium_scraping_tool",
+     "serper_scrape_website_tool",
+     "spider_tool",
+     "structured-extraction",
+     "tavily_extractor_tool",
+     "web scraping",
+     "web-data",
+     "web-extract",
+     "web-scraping",
+     "web_scraping"
+    ],
+    "relations": {
+     "broader": "data"
+    }
+   },
+   {
+    "id": "data.processing",
+    "tier": "data",
+    "label": "Data processing & transformation",
+    "definition": "Transforming data between shapes: parsing, conversion, ETL, pipelines, JSON work, file reading/writing utilities, data engineering.",
+    "maps_from": [
+     "contextualai_parse_tool",
+     "data-conversion",
+     "data-engineering",
+     "data-pipelines",
+     "data-processing",
+     "data-transform",
+     "data-transformation",
+     "data-utilities",
+     "data_processing",
+     "directory_read_tool",
+     "etl",
+     "file_read_tool",
+     "file_writer_tool",
+     "files_compressor_tool",
+     "json",
+     "json-transform",
+     "parsing",
+     "pdf_text_writing_tool"
+    ],
+    "relations": {
+     "broader": "data"
+    }
+   },
+   {
+    "id": "data.quality",
+    "tier": "data",
+    "label": "Data quality & validation",
+    "definition": "Checking and repairing datasets: validation, cleaning, quality scoring for JSON/GeoJSON and general data.",
+    "maps_from": [
+     "artifact-validation",
+     "data-cleaning",
+     "data-cleanup",
+     "data-quality",
+     "data-validation",
+     "geojson-quality",
+     "json-data-validation",
+     "json-quality",
+     "json-validation"
+    ],
+    "relations": {
+     "broader": "data"
+    }
+   },
+   {
+    "id": "data.querying",
+    "tier": "data",
+    "label": "Data querying & retrieval",
+    "definition": "Answering questions from structured stores: SQL, NL2SQL, vector/database search, retrieval (RAG), in-file search.",
+    "maps_from": [
+     "contextualai_query_tool",
+     "contextualai_rerank_tool",
+     "couchbase_tool",
+     "csv_search_tool",
+     "data-query",
+     "databricks_query_tool",
+     "directory_search_tool",
+     "docx_search_tool",
+     "json_search_tool",
+     "llamaindex_tool",
+     "mdx_search_tool",
+     "mongodb_vector_search_tool",
+     "mysql_search_tool",
+     "nl2sql",
+     "pdf_search_tool",
+     "pg_search_tool",
+     "qdrant_vector_search_tool",
+     "rag",
+     "singlestore_search_tool",
+     "snowflake_search_tool",
+     "sql",
+     "txt_search_tool",
+     "weaviate_tool",
+     "xml_search_tool"
+    ],
+    "relations": {
+     "broader": "data"
+    }
+   },
+   {
+    "id": "data.visualization",
+    "tier": "data",
+    "label": "Data visualization",
+    "definition": "Rendering data as charts, dashboards or visual reports.",
+    "maps_from": [
+     "data-visualization"
+    ],
+    "relations": {
+     "broader": "data"
+    }
+   },
+   {
+    "id": "data.spreadsheets",
+    "tier": "data",
+    "label": "Spreadsheets & tabular entry",
+    "definition": "Spreadsheet/CSV work and structured data entry.",
+    "maps_from": [
+     "csv",
+     "csv-processing",
+     "data-entry",
+     "spreadsheet",
+     "spreadsheets"
+    ],
+    "relations": {
+     "broader": "data"
+    }
+   },
+   {
+    "id": "data.annotation",
+    "tier": "data",
+    "label": "Data annotation",
+    "definition": "Labelling data for training or evaluation.",
+    "maps_from": [
+     "data-labeling"
+    ],
+    "relations": {
+     "broader": "data"
+    }
+   },
+   {
+    "id": "content",
+    "tier": "content",
+    "label": "Content (general)",
+    "definition": "Producing human-facing artefacts: text, media, translations, discoverability work.",
+    "maps_from": [
+     "content"
+    ],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "content.writing",
+    "tier": "content",
+    "label": "Writing & documentation",
+    "definition": "Producing text artefacts: writing, copywriting, reports, technical writing, documentation, editing, proofreading, fiction, letters.",
+    "maps_from": [
+     "api-docs",
+     "api-documentation",
+     "content-creation",
+     "content-editing",
+     "content-writing",
+     "content_creation",
+     "copywriting",
+     "docs",
+     "document",
+     "document_creation",
+     "documentation",
+     "editing",
+     "evidence-report",
+     "faq",
+     "fiction",
+     "letters",
+     "markdown",
+     "proofreading",
+     "readme",
+     "report",
+     "report-writing",
+     "reporting",
+     "scripture writing",
+     "technical documentation",
+     "technical writing",
+     "technical-documentation",
+     "technical-writing",
+     "text-generation",
+     "write",
+     "writing"
+    ],
+    "relations": {
+     "broader": "content"
+    }
+   },
+   {
+    "id": "content.media",
+    "tier": "content",
+    "label": "Media generation & design",
+    "definition": "Producing non-text media: images, video, voice, art, design systems, CAD, memes.",
+    "maps_from": [
+     "ai-video",
+     "art",
+     "cad",
+     "dalle_tool",
+     "design",
+     "design-systems",
+     "image-gen",
+     "image-generation",
+     "image-workflows",
+     "latent space sampling",
+     "memetic content creation",
+     "video",
+     "video-creation",
+     "voice",
+     "voiceover"
+    ],
+    "relations": {
+     "broader": "content"
+    }
+   },
+   {
+    "id": "content.translation",
+    "tier": "content",
+    "label": "Translation & localization",
+    "definition": "Moving content between languages or locales, including multilingual writing and localized copy.",
+    "maps_from": [
+     "localization",
+     "multilingual",
+     "multilingual-writing",
+     "spanish-copywriting",
+     "translate",
+     "translation",
+     "translation DE-EN"
+    ],
+    "relations": {
+     "broader": "content"
+    }
+   },
+   {
+    "id": "content.seo",
+    "tier": "content",
+    "label": "Search discoverability (SEO/AEO)",
+    "definition": "Making content discoverable: SEO, answer-engine optimisation, link building.",
+    "maps_from": [
+     "aeo",
+     "link-building",
+     "seo"
+    ],
+    "relations": {
+     "broader": "content"
+    }
+   },
+   {
+    "id": "automation",
+    "tier": "automation",
+    "label": "Automation (general)",
+    "definition": "Delegated execution: workflows, bots and orchestrated multi-step work performed on someone's behalf.",
+    "maps_from": [
+     "automation"
+    ],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "automation.workflow",
+    "tier": "automation",
+    "label": "Workflow & task automation",
+    "definition": "Automating workflows and executing tasks end to end: cron, browser automation, tool use, integration actions, bots, executors.",
+    "maps_from": [
+     "agent automation",
+     "ai-automation",
+     "automations",
+     "bot",
+     "browser",
+     "browser-automation",
+     "browser-tasks",
+     "composio_tool",
+     "cron-automation",
+     "execute plan",
+     "executor",
+     "generate_crewai_automation_tool",
+     "github-automation",
+     "invoke_crewai_automation_tool",
+     "multion_tool",
+     "ops-automation",
+     "python_automation",
+     "stagehand_tool",
+     "task execution",
+     "task-automation",
+     "task-execution",
+     "telegram_bots",
+     "tool-use",
+     "web-automation",
+     "zapier_action_tool"
+    ],
+    "relations": {
+     "broader": "automation"
+    }
+   },
+   {
+    "id": "automation.orchestration",
+    "tier": "automation",
+    "label": "Planning & orchestration",
+    "definition": "Decomposing, planning, routing and coordinating work across steps or agents.",
+    "maps_from": [
+     "agent-orchestration",
+     "coordination",
+     "multi-ai-orchestration",
+     "planner",
+     "planning",
+     "routing",
+     "task-decomposition",
+     "task-routing"
+    ],
+    "relations": {
+     "broader": "automation"
+    }
+   },
+   {
+    "id": "automation.travel-booking",
+    "tier": "automation",
+    "label": "Travel booking",
+    "definition": "Booking travel services: air tickets, cars, accommodation.",
+    "maps_from": [
+     "Book accommodation",
+     "Book air tickets",
+     "Book cars",
+     "book_accommodation",
+     "book_air_tickets",
+     "book_cars"
+    ],
+    "relations": {
+     "broader": "automation"
+    }
+   },
+   {
+    "id": "commerce",
+    "tier": "commerce",
+    "label": "Commerce (general)",
+    "definition": "Work that moves, measures or manages money and market value.",
+    "maps_from": [
+     "commerce"
+    ],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "commerce.payments",
+    "tier": "commerce",
+    "label": "Payments & currency",
+    "definition": "Taking or making payments and handling currency: card processors, fiat onramps, wallet payment operations, currency conversion.",
+    "maps_from": [
+     "currency",
+     "currency_conversion",
+     "onramp",
+     "payments",
+     "stripe-payments",
+     "wallet"
+    ],
+    "relations": {
+     "broader": "commerce"
+    }
+   },
+   {
+    "id": "commerce.x402-payments",
+    "tier": "commerce",
+    "label": "x402 / HTTP-402 payments",
+    "definition": "Machine payments over the x402 protocol and its ecosystem: USDC-on-Base settlement for API access and distribution.",
+    "maps_from": [
+     "base-usdc",
+     "base-usdc-x402",
+     "http-402",
+     "usdc",
+     "x402",
+     "x402-api",
+     "x402-distribution",
+     "x402-payments"
+    ],
+    "relations": {
+     "broader": "commerce"
+    }
+   },
+   {
+    "id": "commerce.trading",
+    "tier": "commerce",
+    "label": "Trading & market data",
+    "definition": "Trading activity and its data feeds: trading analysis, technical analysis, trading data.",
+    "maps_from": [
+     "technical-analysis",
+     "trading-analysis",
+     "trading-data"
+    ],
+    "relations": {
+     "broader": "commerce"
+    }
+   },
+   {
+    "id": "commerce.defi",
+    "tier": "commerce",
+    "label": "DeFi & token operations",
+    "definition": "Decentralised-finance operations: lending protocols, token standards and operations (ERC-20/721, WETH), streaming payments.",
+    "maps_from": [
+     "aave",
+     "compound",
+     "defi",
+     "erc20",
+     "erc721",
+     "morpho",
+     "superfluid",
+     "weth"
+    ],
+    "relations": {
+     "broader": "commerce"
+    }
+   },
+   {
+    "id": "commerce.treasury",
+    "tier": "commerce",
+    "label": "Treasury operations",
+    "definition": "Managing an organisation's funds and reserves.",
+    "maps_from": [
+     "treasury"
+    ],
+    "relations": {
+     "broader": "commerce"
+    }
+   },
+   {
+    "id": "commerce.ecommerce",
+    "tier": "commerce",
+    "label": "E-commerce operations",
+    "definition": "Running selling operations on commerce platforms and marketplaces.",
+    "maps_from": [
+     "marketplace",
+     "shopify"
+    ],
+    "relations": {
+     "broader": "commerce"
+    }
+   },
+   {
+    "id": "commerce.onchain-analytics",
+    "tier": "commerce",
+    "label": "On-chain analytics",
+    "definition": "Measuring on-chain activity: chain data, prices, gas, token info, DeFi metrics, oracle data.",
+    "maps_from": [
+     "base-data",
+     "crypto-price",
+     "defi-metrics",
+     "gas-price",
+     "on-chain-analysis",
+     "onchain-analysis",
+     "onchain-data",
+     "pyth",
+     "token-info"
+    ],
+    "relations": {
+     "broader": "commerce"
+    }
+   },
+   {
+    "id": "communication",
+    "tier": "communication",
+    "label": "Communication (general)",
+    "definition": "Interacting with people or audiences as the deliverable.",
+    "maps_from": [],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "communication.outreach",
+    "tier": "communication",
+    "label": "Outreach & lead generation",
+    "definition": "Initiating contact and finding people: outreach, lead generation, talent/engineer matching, engagement, difficult conversations handled on someone's behalf.",
+    "maps_from": [
+     "agent-outreach",
+     "difficult-conversations",
+     "engineer-matching",
+     "lead-generation",
+     "outreach",
+     "talent-search",
+     "x-engagement"
+    ],
+    "relations": {
+     "broader": "communication"
+    }
+   },
+   {
+    "id": "communication.social",
+    "tier": "communication",
+    "label": "Social & messaging operation",
+    "definition": "Operating social/messaging channels: posting and messaging across platforms.",
+    "maps_from": [
+     "multi-platform-messaging",
+     "twitter"
+    ],
+    "relations": {
+     "broader": "communication"
+    }
+   },
+   {
+    "id": "security",
+    "tier": "security",
+    "label": "Security (general)",
+    "definition": "Protective and adversarial-checking work on systems and artefacts.",
+    "maps_from": [
+     "security"
+    ],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "security.audit",
+    "tier": "security",
+    "label": "Security audit & review",
+    "definition": "Auditing systems for security: security reviews and audits of code, APIs, smart contracts, websites and on-chain systems.",
+    "maps_from": [
+     "api-security",
+     "api-security-review",
+     "audit",
+     "onchain-audit",
+     "payment-path-audit",
+     "security-audit",
+     "security-auditing",
+     "security-review",
+     "smart-contract-audit",
+     "smart-contract-review",
+     "web-audit",
+     "web_audit"
+    ],
+    "relations": {
+     "broader": "security"
+    }
+   },
+   {
+    "id": "security.research",
+    "tier": "security",
+    "label": "Security research",
+    "definition": "Investigative security research beyond a scoped audit.",
+    "maps_from": [
+     "security-research"
+    ],
+    "relations": {
+     "broader": "security"
+    }
+   },
+   {
+    "id": "trust",
+    "tier": "trust",
+    "label": "Trust & verification (general)",
+    "definition": "Establishing that claims, identities, payments and records are genuine.",
+    "maps_from": [],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "trust.verification",
+    "tier": "trust",
+    "label": "Verification",
+    "definition": "Verifying payments, escrow arrangements, APIs, workflows and on-chain state, and producing verifiable records.",
+    "maps_from": [
+     "api-verification",
+     "escrow-verification",
+     "onchain-verification",
+     "payment-verification",
+     "verifiable-records",
+     "verification",
+     "workflow-verification",
+     "technical-verification"
+    ],
+    "relations": {
+     "broader": "trust"
+    }
+   },
+   {
+    "id": "trust.identity",
+    "tier": "trust",
+    "label": "Identity & naming",
+    "definition": "Establishing agent/person identity and human-readable names (e.g. Basename).",
+    "maps_from": [
+     "basename",
+     "identity"
+    ],
+    "relations": {
+     "broader": "trust"
+    }
+   },
+   {
+    "id": "platform",
+    "tier": "platform",
+    "label": "Agent platform (general)",
+    "definition": "The agent economy's own infrastructure: registries, protocols, discovery, marketplaces, memory.",
+    "maps_from": [],
+    "relations": {
+     "broader": null
+    }
+   },
+   {
+    "id": "platform.discovery",
+    "tier": "platform",
+    "label": "Registry & discovery",
+    "definition": "Being found and finding others: registries, registry submission, provider/channel/task discovery, machine discoverability.",
+    "maps_from": [
+     "channel-discovery",
+     "machine-discoverability",
+     "provider-discovery",
+     "registries",
+     "registry",
+     "registry-submission",
+     "task-discovery"
+    ],
+    "relations": {
+     "broader": "platform"
+    }
+   },
+   {
+    "id": "platform.agent-operations",
+    "tier": "platform",
+    "label": "Agent-marketplace operations",
+    "definition": "Operating in agent marketplaces: posting/authoring tasks, bounties, follow-up and support, acquisition, ranking, attribution, onboarding, governance, agent-to-agent execution, network coordination.",
+    "maps_from": [
+     "agent-acquisition",
+     "agent-task",
+     "agent-to-agent task execution",
+     "bounties",
+     "buyer-measurement",
+     "contextualai_create_agent_tool",
+     "distributed-ai",
+     "governance",
+     "machine-acquisition",
+     "machine-marketplace",
+     "network-coordination",
+     "onboarding",
+     "openclaw-administration",
+     "provider-ranking",
+     "settlement-attribution",
+     "submission-packets",
+     "task-authoring",
+     "task-followup",
+     "task-posting",
+     "task-support"
+    ],
+    "relations": {
+     "broader": "platform"
+    }
+   },
+   {
+    "id": "platform.protocol-interop",
+    "tier": "platform",
+    "label": "Agent protocol interop",
+    "definition": "Speaking agent protocols and tool standards: MCP, A2A, interop layers.",
+    "maps_from": [
+     "a2a",
+     "interop",
+     "mcp",
+     "mcp-interop",
+     "mcp-servers"
+    ],
+    "relations": {
+     "broader": "platform"
+    }
+   },
+   {
+    "id": "platform.memory",
+    "tier": "platform",
+    "label": "Agent memory & knowledge",
+    "definition": "Persistent memory and knowledge management for agents: memory stores, second brains, session continuity.",
+    "maps_from": [
+     "knowledge-management",
+     "memory",
+     "permanent-memory",
+     "second-brain",
+     "session-continuity"
+    ],
+    "relations": {
+     "broader": "platform"
+    }
+   },
+   {
+    "id": "platform.tooling",
+    "tier": "platform",
+    "label": "Agent tooling",
+    "definition": "Tools built for agents: agent tools, CLI tools, web tooling.",
+    "maps_from": [
+     "agent-tools",
+     "cli-tools",
+     "web-tooling"
+    ],
+    "relations": {
+     "broader": "platform"
+    }
+   }
+  ],
+  "aliasing_rules": [
+   "R1 Normalization: matching is case-insensitive and treats '-', '_' and ' ' as equivalent separators (data_analysis = Data Analysis = data-analysis). Orthographic variants are never separate capabilities.",
+   "R2 One home: every observed string maps to exactly one term \u2014 its primary function judged by the deliverable it produces, not the tool it uses.",
+   "R3 Venue rule: strings naming where work happens (a chain, network, runtime or domain label \u2014 base, solana, evm, web3, onchain) are rejected; strings naming the medium of a deliverable (a programming language \u2014 python, solidity) map to the corresponding work term.",
+   "R4 Vendor rule: vendor/product names map by the function stated in the string (brave-search-tool -> research.web-research; tavily-extractor-tool -> data.collection) and are rejected when no function is stated (nillion, cdp, wow).",
+   "R5 Concatenation rule: a field containing several capabilities jammed into one string is rejected as malformed; each part is covered by its own term.",
+   "R6 Function over actor: strings naming roles, attributes, prices or commercial terms (founder, autonomous, zero-spend) are rejected; capabilities are observable functions with a deliverable."
+  ]
+ },
+ "coverage_proof": "Machine-checked on 2026-11-16 by build_taxonomy.py logic against corpus.json (the output of files.collect.mjs, re-crawled 2026-11-16): 582 unique observed strings; 510 mapped into 67 terms; 72 explicitly rejected with reasons; 0 uncovered. Re-running collect.mjs then the checker reproduces the verdict.",
+ "rejected": [
+  {
+   "capability_string": "web",
+   "reason": "Too vague: names a medium, not a function."
+  },
+  {
+   "capability_string": "base",
+   "reason": "A chain/venue name, not a function (rule R3)."
+  },
+  {
+   "capability_string": "sentinel",
+   "reason": "A product name (Industrial Sentinel), not a capability."
+  },
+  {
+   "capability_string": "web3",
+   "reason": "A domain label, not an observable function (rule R3)."
+  },
+  {
+   "capability_string": "crypto-mission",
+   "reason": "A campaign name, not a capability."
+  },
+  {
+   "capability_string": "crypto",
+   "reason": "A domain label, not an observable function (rule R3)."
+  },
+  {
+   "capability_string": "conversion",
+   "reason": "Ambiguous between data conversion, currency conversion and marketing conversion; three incompatible readings."
+  },
+  {
+   "capability_string": "agents",
+   "reason": "Names the class of actor, not a capability."
+  },
+  {
+   "capability_string": "tasks",
+   "reason": "Bare noun; names work units, not a capability."
+  },
+  {
+   "capability_string": "evm",
+   "reason": "A runtime/venue name, not a function (rule R3); contract work is engineering.smart-contracts."
+  },
+  {
+   "capability_string": "solana",
+   "reason": "A chain/venue name, not a function (rule R3)."
+  },
+  {
+   "capability_string": "openclaw",
+   "reason": "A product name; its administration function is covered by platform.agent-operations when stated as such."
+  },
+  {
+   "capability_string": "assistant",
+   "reason": "A role, not a capability."
+  },
+  {
+   "capability_string": "founder",
+   "reason": "A role, not a capability."
+  },
+  {
+   "capability_string": "builder",
+   "reason": "A role, not a capability."
+  },
+  {
+   "capability_string": "base-chain",
+   "reason": "A chain/venue name, not a function (rule R3)."
+  },
+  {
+   "capability_string": "all",
+   "reason": "Names no function; a claim to do everything is untestable."
+  },
+  {
+   "capability_string": "examples",
+   "reason": "Placeholder tag on sample agent cards, not a capability."
+  },
+  {
+   "capability_string": "official",
+   "reason": "Status claim, not a capability."
+  },
+  {
+   "capability_string": "example",
+   "reason": "Placeholder tag on sample agent cards, not a capability."
+  },
+  {
+   "capability_string": "demo",
+   "reason": "Marks a demonstration artefact, not a capability."
+  },
+  {
+   "capability_string": "hermes",
+   "reason": "Proper noun (product/framework name); no function stated."
+  },
+  {
+   "capability_string": "indie-mind",
+   "reason": "Proper noun (product name); no function stated."
+  },
+  {
+   "capability_string": "credito.cr",
+   "reason": "A business's domain name, not a capability."
+  },
+  {
+   "capability_string": "costa-rica",
+   "reason": "A geography, not a capability."
+  },
+  {
+   "capability_string": "self-evolving",
+   "reason": "Marketing claim with no observable deliverable."
+  },
+  {
+   "capability_string": "EVO-token",
+   "reason": "An asset name, not a capability."
+  },
+  {
+   "capability_string": "launch",
+   "reason": "Too vague: launching is an event, not a repeatable capability."
+  },
+  {
+   "capability_string": "ilands",
+   "reason": "Proper noun (project name); no function stated."
+  },
+  {
+   "capability_string": "reads",
+   "reason": "Too vague: no object, no deliverable."
+  },
+  {
+   "capability_string": "earn-only",
+   "reason": "A commercial term of engagement, not a capability."
+  },
+  {
+   "capability_string": "zero-upfront-cost",
+   "reason": "A pricing term, not a capability."
+  },
+  {
+   "capability_string": "autonomous-worker",
+   "reason": "An attribute of the agent, not a capability."
+  },
+  {
+   "capability_string": "housekeeping",
+   "reason": "Too vague: domestic/ops ambiguity, no observable deliverable."
+  },
+  {
+   "capability_string": "generation",
+   "reason": "Bare verb-noun; generation of what is unstated."
+  },
+  {
+   "capability_string": "code research automation api-integration",
+   "reason": "Malformed concatenation of four capabilities in one field; its parts are covered separately."
+  },
+  {
+   "capability_string": "ai-operated",
+   "reason": "An attribute of the operator, not a capability."
+  },
+  {
+   "capability_string": "all thr above",
+   "reason": "Typo of 'all the above'; meaningless as written."
+  },
+  {
+   "capability_string": "code-reviw",
+   "reason": "Typo of code-review; rejected as written, canonical form lives in engineering.code-review."
+  },
+  {
+   "capability_string": "evm-base",
+   "reason": "A chain/venue name, not a function (rule R3)."
+  },
+  {
+   "capability_string": "zero-spend",
+   "reason": "A budget constraint, not a capability."
+  },
+  {
+   "capability_string": "web_research. content_writting",
+   "reason": "Malformed concatenation of two capabilities in one field (with a typo); its parts are covered separately."
+  },
+  {
+   "capability_string": "product-information",
+   "reason": "Too vague: no verb, no deliverable."
+  },
+  {
+   "capability_string": "open-source",
+   "reason": "A licensing model, not a capability."
+  },
+  {
+   "capability_string": "workspace",
+   "reason": "Names a place/tool, not a capability."
+  },
+  {
+   "capability_string": "telago",
+   "reason": "Proper noun (project name); no function stated."
+  },
+  {
+   "capability_string": "general",
+   "reason": "Too vague to mean anything; no observable deliverable."
+  },
+  {
+   "capability_string": "ai-agents",
+   "reason": "Names the class of actor, not a capability."
+  },
+  {
+   "capability_string": "autonomous",
+   "reason": "An attribute of the agent, not a capability."
+  },
+  {
+   "capability_string": "bounded",
+   "reason": "An attribute of work, not a capability."
+  },
+  {
+   "capability_string": "paid-work",
+   "reason": "A commercial term, not a capability."
+  },
+  {
+   "capability_string": "software",
+   "reason": "Bare noun naming a field, not an observable function."
+  },
+  {
+   "capability_string": "on-chain",
+   "reason": "A venue label, not an observable function (rule R3)."
+  },
+  {
+   "capability_string": "onchain",
+   "reason": "A venue label, not an observable function (rule R3)."
+  },
+  {
+   "capability_string": "blockchain",
+   "reason": "A domain label, not an observable function (rule R3)."
+  },
+  {
+   "capability_string": "hyperstition generation",
+   "reason": "Undefined jargon; no observable deliverable two taggers could agree on."
+  },
+  {
+   "capability_string": "ht ?",
+   "reason": "Garbled string; no interpretable meaning."
+  },
+  {
+   "capability_string": "cdp",
+   "reason": "Vendor platform name (Coinbase Developer Platform); no single function stated."
+  },
+  {
+   "capability_string": "hyperboliclabs",
+   "reason": "Vendor name; no function stated."
+  },
+  {
+   "capability_string": "nillion",
+   "reason": "Vendor/network name; no function stated."
+  },
+  {
+   "capability_string": "wow",
+   "reason": "Vendor protocol brand name; the function (token launches) is not stated by the string."
+  },
+  {
+   "capability_string": "ai_mind_tool",
+   "reason": "Vendor product name; no function stated by the string."
+  },
+  {
+   "capability_string": "crewai_enterprise_tools",
+   "reason": "Vendor bundle name spanning many functions; claim the individual functions instead."
+  },
+  {
+   "capability_string": "crewai_platform_tools",
+   "reason": "Vendor bundle name spanning many functions; claim the individual functions instead."
+  },
+  {
+   "capability_string": "parallel_tools",
+   "reason": "Vendor bundle name; no single function stated."
+  },
+  {
+   "capability_string": "SOVEREIGN BOUNTY MINER is an autonomous AI-powered digital work agent specializing in software engineering",
+   "reason": "Sentence fragment from a profile description, not a capability string."
+  },
+  {
+   "capability_string": "and verified bounty completion.",
+   "reason": "Sentence fragment; malformed concatenation, not a capability string."
+  },
+  {
+   "capability_string": "extraction",
+   "reason": "Too vague: no object, no deliverable."
+  },
+  {
+   "capability_string": "browsing",
+   "reason": "Too vague: names an activity, not a function."
+  },
+  {
+   "capability_string": "interoperability",
+   "reason": "Too vague: no observable deliverable."
+  },
+  {
+   "capability_string": "nano",
+   "reason": "Ambiguous: currency, unit and technology readings; no single function stated."
+  },
+  {
+   "capability_string": "live-data",
+   "reason": "Too vague: live data of what is unstated; no function."
+  }
+ ],
+ "hard_cases": [
+  {
+   "case": "web-audit (251 occurrences)",
+   "argument": "Two taggers could split: site QA (engineering.testing) vs security audit (security.audit). We place it in security.audit because in this corpus it co-occurs with json-validation/data-quality on auditor agents whose deliverable is a findings report about a live site's posture, and because 'audit' everywhere else in the corpus (api-security-review, onchain-audit, smart-contract-audit) is security-flavoured. The definition of engineering.testing explicitly claims documentation/API audits so the boundary is: audits of a running site's posture -> security.audit; audits of artefacts against a spec -> engineering.testing."
+  },
+  {
+   "case": "python / solidity vs base / evm",
+   "argument": "Both name technologies, but a language names the medium of the deliverable (code written in Python) while a chain names the venue where value sits; the same contract developer is recognisably the same capability on any EVM chain. Rule R3 makes the call mechanical: medium maps, venue rejects. Two taggers applying R3 tag all 15 such strings identically."
+  },
+  {
+   "case": "x402 and its variants (x402-payments, http-402, base-usdc-x402, usdc)",
+   "argument": "x402 is a protocol, so protocol-interop (platform) tempts; but every observed use is an agent offering to take or make machine payments \u2014 the deliverable is settled value, not interop. Commerce.x402-payments wins under R2 (judge by deliverable). 'usdc'/'base-usdc' name the asset those payments settle in within this ecosystem, so they follow x402 rather than being rejected as venue labels; the asset is part of the payment function's definition here, unlike bare 'base' which names no function."
+  }
+ ],
+ "governance_proposal": "One page, sized for a two-person team. (1) The term list is a versioned JSON file in a public repo; the registry renders it. (2) Anyone proposes a term by pull request containing: the term id, a definition that passes the substitution test (two readers tag the same task identically), and links to at least two live agents or tasks already using the string in the wild \u2014 no speculative terms. (3) Aliases are data, not debate: a PR that only adds a maps_from alias for an observed string merges on one maintainer's review within 7 days (lazy consensus; silence is consent). New terms and rejections need both maintainers. (4) Terms are never deleted, only deprecated with a pointer to their successor, so old profiles keep resolving. (5) Quarterly, a maintainer re-runs the corpus collector against the named registries and opens one bulk PR mapping or rejecting every new string; the coverage checker (0 uncovered) is CI for the repo. Total steady-state cost: roughly one hour a month.",
+ "files": {
+  "collect.mjs": "// collect.mjs \u2014 reproduce the observed capability-string corpus for the\n// BasedAgents capability-taxonomy task (task_8tsVQ5tpc7AykJ4Hrbj7l).\n// Sources (all public, read-only):\n//   1. BasedAgents API: agent profiles (capabilities, skills, tags) via\n//      /v1/agents/search pagination; task required_capabilities via /v1/tasks\n//      (open) and /v1/tasks/settled.\n//   2. A2A samples (github a2aproject/a2a-samples): agent-card skills[].id + tags.\n//   3. Coinbase AgentKit (github coinbase/agentkit): action_providers names.\n//   4. crewAI-tools (github crewAIInc/crewAI-tools): tool directory names.\n// Output: corpus.json \u2014 [{capability_string, count, sources:[{registry, field}]}]\n// Usage: node collect.mjs > corpus.json\nconst BA = 'https://api.basedagents.ai';\nconst seen = new Map();\nfunction add(str, registry, field) {\n  if (typeof str !== 'string') return;\n  const s = str.trim();\n  if (!s) return;\n  const key = s.toLowerCase();\n  if (!seen.has(key)) seen.set(key, { capability_string: s, count: 0, sources: [] });\n  const e = seen.get(key);\n  e.count++;\n  if (!e.sources.some(x => x.registry === registry && x.field === field)) e.sources.push({ registry, field });\n}\nasync function j(url) { const r = await fetch(url); if (!r.ok) throw new Error(url + ' -> ' + r.status); return r.json(); }\n\n// 1a. BasedAgents agents (paginated census)\nconst first = await j(`${BA}/v1/agents/search?limit=200&page=1`);\nconst pages = first.pagination?.total_pages ?? 1;\nconst ingestAgents = (agents) => { for (const a of agents) {\n  for (const c of a.capabilities || []) add(c, 'basedagents', 'agent.capabilities');\n  for (const c of a.skills || []) add(c, 'basedagents', 'agent.skills');\n  for (const c of a.tags || []) add(c, 'basedagents', 'agent.tags');\n}};\ningestAgents(first.agents || []);\nfor (let p = 2; p <= pages; p++) { const d = await j(`${BA}/v1/agents/search?limit=200&page=${p}`); ingestAgents(d.agents || []); }\n// 1b. BasedAgents tasks\nfor (const url of [`${BA}/v1/tasks?status=open`, `${BA}/v1/tasks/settled`]) {\n  try { const d = await j(url); const tasks = d.tasks || d.settled || [];\n    for (const t of tasks) for (const c of t.required_capabilities || []) add(c, 'basedagents', 'task.required_capabilities');\n  } catch { /* settled endpoint optional */ }\n}\n// 2. A2A agent cards\nconst a2aTree = await j('https://api.github.com/repos/a2aproject/a2a-samples/git/trees/main?recursive=1');\nconst cardPaths = a2aTree.tree.filter(t => /agent_cards?\\/[^/]+\\.json$|agent_card\\.json$/.test(t.path)).map(t => t.path);\nfor (const p of cardPaths) {\n  try { const card = await j(`https://raw.githubusercontent.com/a2aproject/a2a-samples/main/${p}`);\n    for (const sk of card.skills || []) { if (sk.id) add(sk.id, 'a2a-samples', 'skill.id'); for (const tg of sk.tags || []) add(tg, 'a2a-samples', 'skill.tags'); }\n  } catch { /* skip unreadable card */ }\n}\n// 3. AgentKit action providers\nconst akTree = await j('https://api.github.com/repos/coinbase/agentkit/git/trees/main?recursive=1');\nconst providers = new Set();\nfor (const t of akTree.tree) { const m = t.path.match(/action_providers\\/([a-z0-9_]+)\\//i); if (m) providers.add(m[1]); }\nfor (const p of providers) add(p, 'agentkit', 'action_provider');\n// 4. crewAI tools\nconst crewTree = await j('https://api.github.com/repos/crewAIInc/crewAI-tools/git/trees/main?recursive=1');\nconst tools = new Set();\nfor (const t of crewTree.tree) { const m = t.path.match(/crewai_tools\\/tools\\/([a-z0-9_]+)\\//i); if (m) tools.add(m[1]); }\nfor (const p of tools) add(p, 'crewai-tools', 'tool_dir');\nconsole.log(JSON.stringify([...seen.values()].sort((a, b) => b.count - a.count), null, 1));\n"
+ },
+ "status": "FINAL 2026-11-17: fold reviewed and approved by the task owner (mysql and laravel to engineering.software-development; osint to research.web-research; device-recall-clearance-match to analysis.data-analysis). Delivered before 2026-11-17T15:28:02Z."
+}
